@@ -35,12 +35,12 @@ public class Graph {
     }
     
     /**
-     * The method to check 
+     * The method to check 2 vertex have edge or not.
      * @param i vertex start.
      * @param j vertex end.
      */
-    public void checkIsAdge(int i, int j){
-        graph[i][j] = true;
+    public void checkIsEdge(int i, int j){
+        checkEdge = graph[i][j];
     }
     
     /**
@@ -48,9 +48,10 @@ public class Graph {
      */
     public void display(){
         if (checkEdge) {
-            System.err.println("Is not edge.");
-        }else{
             System.out.println("This is edge.");
+            
+        }else{
+            System.err.println("Is not edge.");
         }
     }
 }

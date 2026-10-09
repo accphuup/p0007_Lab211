@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         //Init size of array.
         int size = 6;
-// Init oject Graph.
+// Init oject graph with size = 6.
         Graph graph = new Graph();
         graph.graph(6);
 
@@ -30,7 +30,7 @@ public class Main {
         int input2 = Unitity.checkInput1("Enter the end point: ", size);
 
         //Step 5: Call method checkIsEdge to check is edge or not.
-        graph.checkIsAdge(input1, input2);
+        graph.checkIsEdge(input1, input2);
         
         //Step 6: Call method display to display result.
         graph.display();
